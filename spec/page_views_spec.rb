@@ -22,6 +22,7 @@ describe PageViews do
   end
 
   describe "descending_order" do
+    
     let (:content) { "/a \n/c \n/a \n/a \n/c \n/a \n/b " }
     let (:result) { [["a", 4], ["c", 2], ["b", 1]] }
 

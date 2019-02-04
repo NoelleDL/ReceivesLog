@@ -25,7 +25,7 @@ class PageViews
   def descending_order(stats)
     sorted_stats = stats.sort_by { | k , v | v }.reverse
       sorted_stats.each do |key, value|
-        puts "Page: #{key}, views: #{value}"
+        puts "Page: #{key}, visits: #{value}"
       end
   end
 end
