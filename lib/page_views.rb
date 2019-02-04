@@ -22,8 +22,15 @@ class PageViews
 
       stats
 
-    end
   end
 
-  run_file = PageViews.new('./webserver.log')
-  puts run_file.get_view_count('./webserver.log')
+  def descending_order(stats)
+    sorted_stats = stats.sort_by { | k , v | v }.reverse
+    sorted_stats
+  end
+end
+
+  #run_file = PageViews.new('./webserver.log')
+  #stats = run_file.get_view_count('./webserver.log')
+  #result = run_file.descending_order(stats)
+  #puts result
