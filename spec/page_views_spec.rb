@@ -23,8 +23,7 @@ describe PageViews do
 
   describe "descending_order" do
     let (:content) { "/a \n/c \n/a \n/a \n/c \n/a \n/b " }
-    #let (:stats) {{ "b"=>1, "a"=>4, "c"=>2 }}
-    let (:result) {{ "a"=>4, "c"=>2, "b"=>1 }}
+    let (:result) { [["a", 4], ["c", 2], ["b", 1]] }
 
     it "displays page views in decending order" do
       page_views = PageViews.new(content)
